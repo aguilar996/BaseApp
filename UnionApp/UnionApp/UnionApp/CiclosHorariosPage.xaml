@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="UnionApp.CiclosHorariosPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout VerticalOptions="CenterAndExpand" Spacing="10">
+                <Button Text="Ciclo I" WidthRequest="300" x:Name="I" Clicked="I_Clicked"
+            HorizontalOptions="Center"></Button>
+                <Button Text="Ciclo II" WidthRequest="300" x:Name="II" Clicked="II_Clicked"
+            HorizontalOptions="Center"></Button>
+                <Button Text="Ciclo III" WidthRequest="300" x:Name="III" Clicked="III_Clicked"
+            HorizontalOptions="Center"></Button>
+                <Button Text="Ciclo IV" WidthRequest="300" x:Name="IV" Clicked="IV_Clicked"
+            HorizontalOptions="Center"></Button>
+                <Button Text="Ciclo V" WidthRequest="300" x:Name="V" Clicked="V_Clicked"
+            HorizontalOptions="Center"></Button>
+                <Button Text="Ciclo VI" WidthRequest="300" x:Name="VI" Clicked="VI_Clicked_1"
+            HorizontalOptions="Center"></Button>
+                <Button Text="Ciclo VII" WidthRequest="300" x:Name="VII" Clicked="VII_Clicked"
+            HorizontalOptions="Center"></Button>
+                <Button Text="Ciclo VIII" WidthRequest="300" x:Name="VIII" Clicked="VIII_Clicked"
+            HorizontalOptions="Center"></Button>
+                <Button Text="Ciclo IX" WidthRequest="300" x:Name="IX" Clicked="IX_Clicked"
+            HorizontalOptions="Center"></Button>
+                <Button Text="Ciclo X" WidthRequest="300" x:Name="X" Clicked="X_Clicked"
+            HorizontalOptions="Center"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

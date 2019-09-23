@@ -19,7 +19,17 @@ namespace UnionApp
 
         private void Matriculacion_Clicked(object sender, EventArgs e)
         {
+            Navigation.PushAsync(new MatriculacionPage());
+        }
 
+        private void RegistroM_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new RegistroMateriaPage());
+}
+
+        private void ReclamoM_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ReclamoMateriaPage());
         }
     }
 }

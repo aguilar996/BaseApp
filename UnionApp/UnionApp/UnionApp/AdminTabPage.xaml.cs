@@ -24,12 +24,12 @@ namespace UnionApp
 
         private void Calendario_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new CalendarPage());
         }
 
         private void Beneficios_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new BenefitPage());
         }
 
         private void Descuentos_Clicked(object sender, EventArgs e)

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="UnionApp.CalcPage">
+    <ContentPage.Content>
+        <ScrollView Orientation="Vertical">
+            <StackLayout>
+                <StackLayout>
+                    <Label Text="Calculadora Académica" FontSize="Title" Font="Bold,40"></Label>
+                </StackLayout>
+                <StackLayout>
+                    <Entry Placeholder="Nota Primer Parcial" ></Entry>
+                    <Entry Placeholder="Nota Sugundo Parcial" ></Entry>
+                    <Entry Placeholder="Nota Tutoria" ></Entry>
+                    <Entry Placeholder="Nota Suplietorio" ></Entry>
+                    <Button Text="Calcular"></Button>
+                     </StackLayout>
+
+                <StackLayout>
+                    <Entry Placeholder="Nota 1"></Entry>
+                    <Entry Placeholder="Nota 2"></Entry>
+                    <Entry Placeholder="Nota 3"></Entry>
+                    <Entry Placeholder="Nota 4"></Entry>
+                    <Button Text="Calcular"></Button>
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>

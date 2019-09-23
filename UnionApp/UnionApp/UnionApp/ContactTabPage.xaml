@@ -23,15 +23,12 @@
                             <ColumnDefinition Width="*" /> 
                         </Grid.ColumnDefinitions>
 
-                        <Label Grid.Row="0" Grid.Column="0" Text="{Binding Nombre}" FontAttributes="Bold" Margin="0,20,0,0" />
-                        <Label Grid.Row="1" Grid.Column="0" Text="{Binding Cargo}" Margin="0,20,0,0"/>
+                        <Label Grid.Row="0" Grid.Column="0" Text="{Binding Nombre}" FontAttributes="Bold" Margin="4,10,0,0" />
+                        <Label Grid.Row="1" Grid.Column="0" Text="{Binding Cargo}" Margin="4,20,0,0"/>
                         <Button Grid.Row="0" Grid.Column="2"  Grid.RowSpan="2" Text="Llamar"  HeightRequest="65" CommandParameter="{Binding Celular}"  />
                     </Grid>
 
                 </ViewCell>
-                     <!--<TextCell Text="{Binding Nombre}" Detail="{Binding Cargo} ">
-                    </TextCell>
-                    <Button Text="Llamar" x:Name="Call_Button" Clicked="Call_Button_Clicked" CommandParameter="{Binding Celular}"></Button>-->
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>  

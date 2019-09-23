@@ -5,32 +5,34 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="UnionApp.ContactTabPage">
-    <ContentPage.Content>
-       
-            <ListView  ItemsSource="{Binding ContactList}"
-                       RowHeight="100"> 
-                <ListView.ItemTemplate >
-                    <DataTemplate>
-                    <ViewCell>
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="auto"/>
-                                <ColumnDefinition Width="auto"/>
-                            </Grid.ColumnDefinitions>
 
-                            <StackLayout Grid.Column="0">
-                                <Label Text="{Binding Nombre}"/>
-                                <Label Text="{Binding Cargo}" />
-                            </StackLayout> 
-                            <StackLayout Grid.Column="1" Orientation="Horizontal">
-                                <Button Text="LLamar"/> 
-                            </StackLayout> 
-                            <Image Grid.Column="2" Style="{StaticResource ListViewCellImage}"/>
-                        </Grid>
-                    </ViewCell>
-                </DataTemplate>
+
+    <ListView x:Name="ContactosView"
+                       RowHeight="100"> 
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                <ViewCell>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" /> 
+                        </Grid.ColumnDefinitions>
+
+                        <Label Grid.Row="0" Grid.Column="0" Text="{Binding Nombre}" FontAttributes="Bold" Margin="0,20,0,0" />
+                        <Label Grid.Row="1" Grid.Column="0" Text="{Binding Cargo}" Margin="0,20,0,0"/>
+                        <Button Grid.Row="0" Grid.Column="2"  Grid.RowSpan="2" Text="Llamar"  HeightRequest="65" CommandParameter="{Binding Celular}"  />
+                    </Grid>
+
+                </ViewCell>
+                     <!--<TextCell Text="{Binding Nombre}" Detail="{Binding Cargo} ">
+                    </TextCell>
+                    <Button Text="Llamar" x:Name="Call_Button" Clicked="Call_Button_Clicked" CommandParameter="{Binding Celular}"></Button>-->
+                    </DataTemplate>
                 </ListView.ItemTemplate>
-            </ListView> 
-    </ContentPage.Content>
+            </ListView>  
 </ContentPage>

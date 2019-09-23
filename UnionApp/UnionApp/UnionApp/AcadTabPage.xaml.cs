@@ -16,5 +16,30 @@ namespace UnionApp
         {
             InitializeComponent();
         }
+
+        private void Horarios_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Flujograma_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Calculadora_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Videos_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Libros_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }

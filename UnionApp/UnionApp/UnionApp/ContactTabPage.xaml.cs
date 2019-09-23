@@ -22,7 +22,10 @@ namespace UnionApp
         protected override void OnAppearing()
         {
             base.OnAppearing(); 
-            viewModel.GetContactos(); 
+            viewModel.GetContactos();
+            ContactosView.ItemsSource = viewModel.ContactList;
         }
+
+        
     }
 }

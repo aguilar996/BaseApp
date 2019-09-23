@@ -8,15 +8,15 @@
     <ContentPage.Content>
         <StackLayout>
             <StackLayout VerticalOptions="CenterAndExpand" Spacing="10">
-                <Button Text="Horarios" WidthRequest="300" 
+                <Button Text="Horarios" WidthRequest="300" x:Name="Horarios" Clicked="Horarios_Clicked"
             HorizontalOptions="Center"></Button>
-                <Button Text="Flujograma" WidthRequest="300" 
+                <Button Text="Flujograma" WidthRequest="300" x:Name="Flujograma" Clicked="Flujograma_Clicked"
             HorizontalOptions="Center"></Button>
-                <Button Text="Calculadora de notas" WidthRequest="300" 
+                <Button Text="Calculadora de notas" WidthRequest="300" x:Name="Calculadora"  Clicked="Calculadora_Clicked"
             HorizontalOptions="Center"></Button>
-                <Button Text="Videos Explicativos" WidthRequest="300" 
+                <Button Text="Videos Explicativos" WidthRequest="300" x:Name="Videos" Clicked="Videos_Clicked"
             HorizontalOptions="Center"></Button>
-                <Button Text="Libros" WidthRequest="300" 
+                <Button Text="Libros" WidthRequest="300"  x:Name="Libros" Clicked="Libros_Clicked"
             HorizontalOptions="Center"></Button>
             </StackLayout>
         </StackLayout>

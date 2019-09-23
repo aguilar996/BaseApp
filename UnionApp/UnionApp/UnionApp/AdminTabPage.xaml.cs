@@ -16,5 +16,25 @@ namespace UnionApp
         {
             InitializeComponent();
         }
+
+        private void Procesos_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ProcessPage());
+        }
+
+        private void Calendario_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Beneficios_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Descuentos_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }

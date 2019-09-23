@@ -7,13 +7,13 @@
              x:Class="UnionApp.AdminTabPage">
     <ContentPage.Content>
         <StackLayout VerticalOptions="CenterAndExpand" Spacing="10">
-            <Button Text="Procesos" WidthRequest="300" 
+            <Button Text="Procesos" WidthRequest="300" x:Name="Procesos" Clicked="Procesos_Clicked"
             HorizontalOptions="Center"></Button>
-            <Button Text="Calendario" WidthRequest="300" 
+            <Button Text="Calendario" WidthRequest="300" x:Name="Calendario" Clicked="Calendario_Clicked"
             HorizontalOptions="Center"></Button>
-            <Button Text="Beneficios" WidthRequest="300" 
+            <Button Text="Beneficios" WidthRequest="300" x:Name="Beneficios" Clicked="Beneficios_Clicked"
             HorizontalOptions="Center"></Button>
-            <Button Text="Descuentos" WidthRequest="300" 
+            <Button Text="Descuentos" WidthRequest="300" x:Name="Descuentos" Clicked="Descuentos_Clicked"
             HorizontalOptions="Center"></Button>
         </StackLayout>
     </ContentPage.Content>
